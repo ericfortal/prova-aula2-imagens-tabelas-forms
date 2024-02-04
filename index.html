@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prova - Imagens/Tabelas/Forms</title>
+    <title>Prova Imagens / Tabelas e Forms</title>
 </head>
 <body>
+    <h1>Prova Imagens / Tabelas e Forms</h1>
+    <p>Nessa atividade iremos criar um formulário em uma página web aplicando uma série de tipos de formulário onde o usuário poderá em um campo específico, escrever um texto, inserir senha, e-mail, teremos aplicação de checkboxes onde o usuário poderá selecionar mais de uma opção, teremos radiobutton com 2 opções onde o usuário poderá selecionar apenas uma opção por vez, teremos botão para envio de informações do formulário e por último, um botão de reset que limpará todo o formulário para que o usuário possa começar o preenchimento novamente.</p>
+    <h2>Execução da prova abaixo:</h2>
+    <hr>
+    <h3>Cadastro completo de usuário:</h3>
+    <form action="#">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <ul>
+            <li>Escolha sua opções de preferência</li>
+            <ul>
+                <li>
+                    <label for="surf">
+                    <input type="checkbox" id="surf" name="surf">
+                    Surf
+                    </label>
+                </li>
+                <li>
+                    <label for="surf">
+                    <input type="checkbox" id="surf" name="surf">
+                    Futebol
+                    </label>
+                </li>
+                <li>
+                    <label for="surf">
+                    <input type="checkbox" id="surf" name="surf">
+                    Volei
+                    </label>
+                </li>
+                <li>
+                    <label for="surf">
+                    <input type="checkbox" id="surf" name="surf">
+                    Música Rock
+                    </label>
+                </li>
+                <li>
+                    <label for="surf">
+                    <input type="checkbox" id="surf" name="surf">
+                    Música Reggae
+                    </label>
+                </li>
+            </ul>
+        </ul>
+
+        <p><b>Qual seu hobbie favorito?</b> (uma opção)</p>
+
+        <label for="hobbieSurfar">
+        <input type="radio" id="hobbieSurfar" name="hobbie" value="hobbieSurfar">
+        Surfar</label><br>
+
+        <label for="hobbieJogarFutebol">
+        <input type="radio" id="hobbieJogarFutebol" name="hobbie" value="hobbieJogarFutebol">
+        Jogar Futebol</label><br><br>
+
+
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Limpar formulário">
+       
+    </form><br>
+    <hr>
+    <h3>Comentários gerais sobre a execução da prova acima</h3>
+    <ul>
+        <li>Na etapa de criação de uma lista com 5 checkboxes, apesar de não ter ficado claro no pré-requisito da prova, como forma de organizar melhor criei uma lista não ordenada, com outra lista aninhada não ordenada contendo as 5 opções conforme pedido na questão. </li>
+        <li><p>Na etapa de criação do checkbox por padrão o html, coloca a caixa de seleção após a descrição da caixa, acreditando ficar mais estético, posicionei a caixa antes da descrição colocando o input dentro de label, a mesma lógica foi utilizada para o radio.</p></li>
+        <li>Antes de utilizar o radio, foi colocado um parágrafo "p" utilizando a tag "b" para evidenciar uma pergunta que levaria o usuário a responder por meio de uma marcação única utilizando o atributo type definido como "radio".</li>
+    </ul>
     
+    <footer style="background-color: rgb(217, 255, 179); text-align: center;  max-width: 0 auto;  margin: 0 auto;">Prova Finalizada e salva com ajuda de <b>Git</b> e <b>Github</b></footer>
 </body>
 </html>
